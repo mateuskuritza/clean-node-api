@@ -1,23 +1,31 @@
 {
-  "name": "clean-node-api",
-  "version": "1.0.0",
-  "description": "��#\u0000 \u0000c\u0000l\u0000e\u0000a\u0000n\u0000-\u0000n\u0000o\u0000d\u0000e\u0000-\u0000a\u0000p\u0000i\u0000\r\u0000 \u0000",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/mateuskuritza/clean-node-api.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/mateuskuritza/clean-node-api/issues"
-  },
-  "homepage": "https://github.com/mateuskuritza/clean-node-api#readme",
-  "devDependencies": {
-    "standard": "^16.0.4"
-  }
+	"name": "clean-node-api",
+	"version": "1.0.0",
+	"description": "��#\u0000 \u0000c\u0000l\u0000e\u0000a\u0000n\u0000-\u0000n\u0000o\u0000d\u0000e\u0000-\u0000a\u0000p\u0000i\u0000\r\u0000 \u0000",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"lint-staged": {
+		"*.js": [
+			"standard --fix",
+			"git add"
+		]
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/mateuskuritza/clean-node-api.git"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/mateuskuritza/clean-node-api/issues"
+	},
+	"homepage": "https://github.com/mateuskuritza/clean-node-api#readme",
+	"devDependencies": {
+		"husky": "^7.0.4",
+		"lint-staged": "^12.1.5",
+		"standard": "^16.0.4"
+	}
 }
