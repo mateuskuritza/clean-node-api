@@ -6,12 +6,6 @@
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1"
 	},
-	"lint-staged": {
-		"*.js": [
-			"standard --fix",
-			"git add"
-		]
-	},
 	"repository": {
 		"type": "git",
 		"url": "git+https://github.com/mateuskuritza/clean-node-api.git"
